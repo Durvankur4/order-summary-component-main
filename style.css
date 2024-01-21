@@ -1,0 +1,114 @@
+:root {
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    --blue: hsl(225, 71%, 46%);
+    --white: hsl(0, 0%, 100%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+body {
+    background-color: var(--Dark-blue);
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 500;
+    /* position: relative; */
+}
+
+.wrapper {
+    background-color: var(--white);
+    height: 80vh;
+    width: 50vh;
+    font-family: inherit;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+
+
+.hero {
+    max-width: 100%;
+    height: auto;
+
+}
+
+.under_hero {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.wrapper p:first-child {
+    font-weight: 900;
+}
+
+.description {
+    opacity: .75;
+    color: var(--Dark-blue);
+}
+
+.payment {
+    display: flex;
+    /* background-color: var(--Dark-blue); */
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.payment div {
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    margin-right: 3rem;
+}
+
+.payment div span:last-child {
+    font-weight: 500;
+    color: rgba(77, 72, 72, 0.938);
+}
+
+button {
+    width: 100%;
+    height: 2.5rem;
+    margin-top: 1rem;
+    border-radius: .75rem;
+    border: none;
+    cursor: pointer;
+}
+
+.change:hover {
+    text-decoration: none;
+
+
+}
+
+.proceed_to_pay {
+    background-color: var(--blue);
+}
+
+.proceed_to_pay:hover {
+    background-color: var(--Desaturated-blue);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: .2s ease-in;
+}
+
+.cancle_order:hover {
+    color: rgba(77, 72, 72, 0.938);
+
+}
+
+
+
+
+.attribution {
+    color: wheat;
+}
